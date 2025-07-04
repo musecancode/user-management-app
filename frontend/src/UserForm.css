@@ -1,0 +1,155 @@
+/* Main form wrapper */
+form {
+  margin: 0 auto;
+  max-width: 800px;
+  min-height: 70vh;
+  padding: 20px 30px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  background-color: #faf3ee;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+}
+
+/* Responsive title */
+h2 {
+  font-family: serif;
+  font-weight: normal;
+  font-size: 2.5rem;
+  margin-bottom: 24px;
+  text-align: center;
+  color: #27314c;
+}
+
+/* All input fields */
+input {
+  font-family: serif;
+  margin-top: 16px;
+  padding: 16px;
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 18px;
+  background-color: #fff;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #c97a40;
+  outline: none;
+}
+
+/* Wrap password input and eye icon */
+.password-wrapper {
+  position: relative;
+}
+
+/* Eye toggle icon button */
+form button[type="button"] {
+  position: absolute;
+  top: 50%;
+  right: 12px;
+  transform: translateY(-50%);
+  background: #fcfbfb;
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  cursor: pointer;
+  color: #555;
+  border: none;
+}
+
+form button[type="button"]:hover {
+  color: #c97a40;
+  background-color: #e2e2e2;
+}
+
+/* Submit button */
+button[type="submit"] {
+  font-family: serif;
+  margin-top: 30px;
+  background-color: #27314c;
+  color: white;
+  border: none;
+  padding: 14px 0;
+  cursor: pointer;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: background-color 0.3s;
+  width: 100%;
+  display: block;
+  text-align: center;
+}
+
+button[type="submit"]:hover {
+  background-color: #c97a40;
+}
+
+/* Error text */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+/* ✅ MEDIA QUERIES FOR RESPONSIVENESS */
+
+/* Medium screens (tablet) */
+@media (max-width: 768px) {
+  form {
+    padding: 20px;
+    max-width: 90%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  input,
+  button[type="submit"] {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  form button[type="button"] {
+    width: 30px;
+    height: 30px;
+    right: 10px;
+  }
+}
+
+/* Small screens (mobile) */
+@media (max-width: 480px) {
+  form {
+    padding: 16px;
+    border-radius: 8px;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  input {
+    padding: 12px;
+    font-size: 15px;
+  }
+
+  button[type="submit"] {
+    padding: 12px;
+    font-size: 16px;
+  }
+
+  form button[type="button"] {
+    width: 28px;
+    height: 28px;
+    right: 8px;
+  }
+}

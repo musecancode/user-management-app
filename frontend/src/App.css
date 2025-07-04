@@ -1,0 +1,52 @@
+.container {
+  max-width: 800px;
+  min-height: 70vh;
+  margin: 40px auto;
+  padding: 2px, 2px;
+  background: #faf3ee;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+form input,
+form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  background-color: #27314c;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #c97a40;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+@media (min-width: 600px) {
+  .upload-container button {
+    width: auto;
+    margin-right: 10px;
+  }
+
+  .upload-container {
+    padding: 30px;
+  }
+}

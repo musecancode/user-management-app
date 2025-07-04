@@ -1,0 +1,110 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  background: #f4f0f0;
+  overflow-x: auto;
+  display: block; /* Make it scroll on small devices */
+}
+
+/* Table headers and cells */
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  font-size: 16px;
+  white-space: nowrap; /* Prevent text from breaking in mobile */
+}
+
+th {
+  font-family: sans-serif;
+  color: #27314c;
+  background-color: #f9f9f9;
+}
+
+/* Action buttons inside table */
+button {
+  padding: 6px 10px;
+  background-color: #27314c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+button:hover {
+  background-color: #c97a40;
+}
+
+/* Pagination button styling */
+.pagination-button {
+  margin: 20px 10px 0 0;
+  padding: 10px 24px;
+  font-size: 16px;
+  border: none;
+  background-color: #27314c;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  font-family: serif;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background-color: #c97a40;
+}
+
+.pagination-button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
+/*  Responsive tweaks */
+@media (max-width: 768px) {
+  th,
+  td {
+    font-size: 14px;
+    padding: 6px;
+  }
+
+  button {
+    padding: 5px 8px;
+    font-size: 13px;
+  }
+
+  .pagination-button {
+    font-size: 14px;
+    padding: 8px 18px;
+  }
+}
+
+@media (max-width: 480px) {
+  th,
+  td {
+    font-size: 13px;
+    padding: 5px;
+  }
+
+  button {
+    font-size: 12px;
+    padding: 4px 6px;
+  }
+
+  .pagination-button {
+    width: 100%;
+    margin-top: 10px;
+    font-size: 15px;
+    padding: 10px;
+  }
+
+  table {
+    font-size: 14px;
+    display: block;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+  }
+}
